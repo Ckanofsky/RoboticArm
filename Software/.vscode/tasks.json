@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build and save log",
+      "detail": "Runs the PlatformIO build and writes the output to build.log",
+      "type": "process",
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "%USERPROFILE%\\.platformio\\penv\\Scripts\\platformio.exe run > build.log 2>&1 & type build.log"
+      ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

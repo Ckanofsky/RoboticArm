@@ -1,0 +1,2 @@
+/* No overrides needed yet: the board files already set up FDCAN2,
+ * the onboard CAN transceiver and the USB serial port. */
